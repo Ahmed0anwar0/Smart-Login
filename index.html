@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class=" home d-none">
+
+        <nav class="navbar mb-5">
+            <div class="container-fluid d-flex w-75">
+                <div class="logo">
+                    <a class="navbar-brand text-white" href="#">SMART LOGIN</a>
+                </div>
+
+                <div class="logout">
+                    <a class="btn btn-outline-info w-100 my-3 fw-medium" href="/" onclick="logout()">Logout</a>
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="hero">
+            <div class="container my-5 text-center w-50 h-100 d-flex align-items-center">
+
+                <div class="group m-auto p-5">
+                    <h1 id="username"></h1>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="container forms w-50 mt-5 d-block">
+
+        <div id="signin" class="d-block">
+            <div class="group m-auto p-5 text-light">
+                <h1>Smart Login System</h1>
+        
+                <input required id="signinEmail" type="text" class="form-control my-3" placeholder="Enter your email">
+    
+                <input required id="signinPassword" type="text" class="form-control my-3" placeholder="Enter your password">
+                <div class="erorrLogin text-danger d-none">Email or Password Is Incorrect</div>
+                <button onclick="login()" class="btn btn-outline-info w-100 my-3 fw-medium">Login</button>
+
+                <p class="text-white">Don’t have an account? <a class="text-white" onclick="goUp()" href="#">Sign Up</a></p>
+            </div>
+        </div>
+    
+    
+        <div id="signUp" class="d-none">
+            <div class="group m-auto p-5 text-light">
+                <h1>Smart Login System</h1>
+    
+                <input required oninput="valid(this)" id="signupName" class="form-control my-3" placeholder="Enter your name" type="text">
+                
+                <input required oninput="valid(this)" id="signupEmail" type="text" class="form-control my-3" placeholder="Enter your email">
+                
+                <input required oninput="valid(this)" id="signupPassword" type="text" class="form-control my-3" placeholder="Enter password">
+                
+                <button onclick="signUp()" class="btn btn-outline-info w-100 my-3 fw-medium">Sign Up</button>
+
+                <p class="text-white">You have an account? <a class="text-white" onclick="goIn()" href="#">Signin</a></p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+body{
+    background-color: rgb(21, 84, 82);
+ 
+}
+.container,.navbar{
+    text-align: center;
+    box-shadow:  0 0 40px 10px;
+}
+.container p a{
+    text-decoration: none;
+}
+.container p a:hover{
+    text-decoration: underline;
+}
+
+.forms input{
+    background-color: rgb(21, 84, 82)!important;
+    color: white !important;
+}
+
+.forms .form-control:focus{
+    box-shadow: none !important;
+    border-color: #bfda3f;
+}
+
+.forms input::placeholder {
+    color: rgb(154, 154, 154) !important;
+  }
+
+  .forms .btn-outline-info{
+    background-color: #bfda3f!important;
+    color:#000 ;
+    border-color: #bfda3f;
+  }
+
+   .btn-outline-info:hover{
+    background-color: #d2e962!important;
+    color:#000 ;
+    border-color: #bfda3f;
+  }
+
+  .logout a{
+    background-color: rgb(21, 84, 82);
+    border-color: #bfda3f;
+    color: #bfda3f;
+  }
+
+  #username{
+    color: #bfda3f;
+  }
+  
+  .hero{
+    margin-top: 8rem;
+  }
